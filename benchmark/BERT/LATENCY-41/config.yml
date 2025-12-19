@@ -1,0 +1,746 @@
+
+version: 1.0
+provider:
+    name: openfaas
+    gateway: http://serverless.siat.ac.cn:31112
+
+functions:
+    
+    bert-21b-submod-40-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-40
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-40-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "0.24s"
+            write_timeout: "0.24s"
+            exec_timeout: "0.24s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-39-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-39
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-39-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "0.49s"
+            write_timeout: "0.49s"
+            exec_timeout: "0.49s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-38-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-38
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-38-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "0.73s"
+            write_timeout: "0.73s"
+            exec_timeout: "0.73s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-37-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-37
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-37-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "0.98s"
+            write_timeout: "0.98s"
+            exec_timeout: "0.98s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-36-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-36
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-36-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "1.22s"
+            write_timeout: "1.22s"
+            exec_timeout: "1.22s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-35-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-35
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-35-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "1.46s"
+            write_timeout: "1.46s"
+            exec_timeout: "1.46s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-34-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-34
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-34-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "1.71s"
+            write_timeout: "1.71s"
+            exec_timeout: "1.71s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-33-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-33
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-33-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "1.95s"
+            write_timeout: "1.95s"
+            exec_timeout: "1.95s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-32-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-32
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-32-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "2.2s"
+            write_timeout: "2.2s"
+            exec_timeout: "2.2s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-31-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-31
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-31-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "2.44s"
+            write_timeout: "2.44s"
+            exec_timeout: "2.44s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-30-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-30
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-30-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "2.68s"
+            write_timeout: "2.68s"
+            exec_timeout: "2.68s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-29-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-29
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-29-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "2.93s"
+            write_timeout: "2.93s"
+            exec_timeout: "2.93s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-28-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-28
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-28-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "3.17s"
+            write_timeout: "3.17s"
+            exec_timeout: "3.17s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-27-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-27
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-27-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "3.41s"
+            write_timeout: "3.41s"
+            exec_timeout: "3.41s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-26-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-26
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-26-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "3.66s"
+            write_timeout: "3.66s"
+            exec_timeout: "3.66s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-25-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-25
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-25-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "3.9s"
+            write_timeout: "3.9s"
+            exec_timeout: "3.9s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-24-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-24
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-24-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "4.15s"
+            write_timeout: "4.15s"
+            exec_timeout: "4.15s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-23-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-23
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-23-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "4.39s"
+            write_timeout: "4.39s"
+            exec_timeout: "4.39s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-22-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-22
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-22-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "4.63s"
+            write_timeout: "4.63s"
+            exec_timeout: "4.63s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-21-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-21
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-21-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "4.88s"
+            write_timeout: "4.88s"
+            exec_timeout: "4.88s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-20-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-20
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-20-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "5.12s"
+            write_timeout: "5.12s"
+            exec_timeout: "5.12s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-19-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-19
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-19-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "5.37s"
+            write_timeout: "5.37s"
+            exec_timeout: "5.37s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-18-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-18
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-18-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "5.61s"
+            write_timeout: "5.61s"
+            exec_timeout: "5.61s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-17-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-17
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-17-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "5.85s"
+            write_timeout: "5.85s"
+            exec_timeout: "5.85s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-16-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-16
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-16-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "6.1s"
+            write_timeout: "6.1s"
+            exec_timeout: "6.1s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-15-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-15
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-15-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "6.34s"
+            write_timeout: "6.34s"
+            exec_timeout: "6.34s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-14-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-14
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-14-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "6.59s"
+            write_timeout: "6.59s"
+            exec_timeout: "6.59s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-13-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-13
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-13-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "6.83s"
+            write_timeout: "6.83s"
+            exec_timeout: "6.83s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-12-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-12
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-12-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "7.07s"
+            write_timeout: "7.07s"
+            exec_timeout: "7.07s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-11-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-11
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-11-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "7.32s"
+            write_timeout: "7.32s"
+            exec_timeout: "7.32s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-10-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-10
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-10-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "7.56s"
+            write_timeout: "7.56s"
+            exec_timeout: "7.56s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-9-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-9
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-9-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "7.8s"
+            write_timeout: "7.8s"
+            exec_timeout: "7.8s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-8-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-8
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-8-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "8.05s"
+            write_timeout: "8.05s"
+            exec_timeout: "8.05s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-7-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-7
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-7-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "8.29s"
+            write_timeout: "8.29s"
+            exec_timeout: "8.29s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-6-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-6
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-6-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "8.54s"
+            write_timeout: "8.54s"
+            exec_timeout: "8.54s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-5-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-5
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-5-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "8.78s"
+            write_timeout: "8.78s"
+            exec_timeout: "8.78s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-4-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-4
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-4-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "9.02s"
+            write_timeout: "9.02s"
+            exec_timeout: "9.02s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-3-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-3
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-3-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "9.27s"
+            write_timeout: "9.27s"
+            exec_timeout: "9.27s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-2-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-2
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-2-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "9.51s"
+            write_timeout: "9.51s"
+            exec_timeout: "9.51s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-1-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-1
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-1-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "9.76s"
+            write_timeout: "9.76s"
+            exec_timeout: "9.76s"
+            debug: "false"
+            infer_device: "cuda"
+    
+    bert-21b-submod-0-latency-41:
+        namespace: cdgp
+        lang: python3-http
+        handler: ./bert-21b-submod-0
+        image: k.harbor.siat.ac.cn/openfaas/cdgp-bert-21b-submod-0-latency-41:2.8.2.dasheng
+        requests:
+            cpu: 1000m
+            memory: 8Gi
+        limits:
+            cpu: 1000m
+            memory: 64Gi
+        environment:
+            read_timeout: "10.0s"
+            write_timeout: "10.0s"
+            exec_timeout: "10.0s"
+            debug: "false"
+            infer_device: "cuda"
+    
