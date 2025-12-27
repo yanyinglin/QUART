@@ -9,7 +9,7 @@ import math
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from OCD.CPUCompensator import CPUDemandModel, CPUCompensator
+from quart.core.cpu_compensator import CPUDemandModel, CPUCompensator
 
 
 class TestCPUDemandModel(unittest.TestCase):

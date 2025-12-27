@@ -10,7 +10,7 @@ import math
 # Add parent directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from OCD.ReplicaCorrector import MMCQueue, PIDController, ReplicaCorrector
+from quart.core.replica_corrector import MMCQueue, PIDController, ReplicaCorrector
 
 
 class TestMMCQueue(unittest.TestCase):

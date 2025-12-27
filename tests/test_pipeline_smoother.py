@@ -10,7 +10,7 @@ import torch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from OCD.PipelineSmoother import PipelineSmoother
+from quart.core.pipeline_smoother import PipelineSmoother
 
 
 class TestPipelineSmoother(unittest.TestCase):
@@ -122,7 +122,7 @@ class TestGraphAttentionLayer(unittest.TestCase):
     
     def test_gat_layer_forward(self):
         """Test GAT layer forward pass"""
-        from OCD.PipelineSmoother import GraphAttentionLayer
+        from quart.core.pipeline_smoother import GraphAttentionLayer
         
         layer = GraphAttentionLayer(in_features=8, out_features=16)
         

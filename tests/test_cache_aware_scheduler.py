@@ -9,8 +9,8 @@ import numpy as np
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from OCD.CacheAwareScheduler import (
-    CachedParameter, ServerCache, KeysManager, 
+from quart.core.cache_scheduler import (
+    CachedParameter, ServerCache, KeysManager,
     KLDivergenceOptimizer, CacheAwareScheduler
 )
 
