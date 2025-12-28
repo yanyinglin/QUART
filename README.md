@@ -106,13 +106,13 @@ cd benchmark/BERT/ME-21
 2. **Start Replica Corrector**:
 ```bash
 cd OCD
-python DaShengScaler.py
+python QuartScaler.py
 ```
 
 3. **Start Cache-Aware Scheduler**:
 ```bash
 cd OCD
-python DaShengScheduler.py
+python QuartScheduler.py
 ```
 
 4. **Monitor System**:
